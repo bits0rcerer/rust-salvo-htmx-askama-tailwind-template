@@ -3,5 +3,9 @@ ignore = [
     "package-lock.json",
     "Cargo.lock",
     "node_modules",
-    "target"
+    "target",
+    "README.md"
+]
+exclude = [
+    "/**/*.html",
 ]
