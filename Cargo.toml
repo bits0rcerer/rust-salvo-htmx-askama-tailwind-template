@@ -1,0 +1,15 @@
+[package]
+name = "{{project-name}}"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+tokio = { version = "1", features = ["full"] }
+tracing = { version = "0.1" }
+tracing-subscriber = { version = "0.3", features = ["env-filter"] }
+
+eyre = "0.6.8"
+
+salvo = { version = "0.58.1", features = ["serve-static", "logging"] }
+askama = { version = "0.12.1" }
+rust-embed = { version = "8.0.0", features = ["interpolate-folder-path", "mime-guess"] }
